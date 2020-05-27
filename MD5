@@ -1,9 +1,9 @@
-3af112d186943ff56709632ae793244c *DESCRIPTION
+099756362b9678ec61a6c05979bb20a4 *DESCRIPTION
 3a1cdf3a8255e0fa57bee3760d61f003 *LICENSE
 5d5e139ec6387cc47fc4bf2ef7aecfb7 *NAMESPACE
 8d223faa6f25e8f9bc8bf8360f974edc *R/cbq-package.R
-cb6c3ff2b0cd002a4462db9a8b82051d *R/cbq.R
-2167f3318423aa3d6f9954d2526d5889 *R/plotfun.R
+85d11148f8762ec5b700772d738dff8f *R/cbq.R
+12a575230f9b20ee4b36cc2b6bd834ce *R/plotfun.R
 bc2bdf03df47b177d27cdd279f5d7581 *R/printfun.R
 cf35ba5b0d07ee26324f2dde79d93ca4 *R/source_fun.R
 a1a4cd4465d33492af5b68c3a895dd42 *R/stanmodels.R
@@ -29,7 +29,7 @@ b027322f5a0661f53634f6e747279fa3 *inst/stan/cbqrandomd.stan
 530471259243784064c8f7c10ed5c1cb *inst/stan/cbqrandomdv.stan
 8407f9ab896214d6e251f2bee1304821 *inst/stan/include/license.stan
 8aa77b74ea9dbbc72fcc13c9ab6ba856 *man/cbq-package.Rd
-ed7dfd3f4a16dab37d689158a4a88fd7 *man/cbq.Rd
+704d8b9bf8c300483c6e6affb264a600 *man/cbq.Rd
 01153f3ea2c41c7b1b81ab50e9f49e7f *man/coef.cbq.Rd
 325523d4cfca8b9b731e1109e2880a21 *man/dald.Rd
 d237379f648a3453586f70eadfa5205a *man/inverse.Rd

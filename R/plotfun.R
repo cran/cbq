@@ -31,6 +31,7 @@ plot.cbq <- function(x, type = "trace", ...) {
 #'
 #'
 plot_trace.cbq <- function(object, ...) {
+  names(object$stanfit)[1:object$npars] <- object$xnames
   rstan::traceplot(object$stanfit, ...)
 }
 
@@ -46,5 +47,6 @@ plot_trace.cbq <- function(object, ...) {
 #'
 #'
 plot_coef.cbq <- function(object, ...) {
+  names(object$stanfit)[1:object$npars] <- object$xnames
   rstan::plot(object$stanfit, ...)
 }

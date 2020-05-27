@@ -4,11 +4,25 @@
 \alias{cbq}
 \title{Fitting conditional binary quantile models}
 \usage{
-cbq(formula, data, q = NULL, vi = FALSE, nsim = 1000,
-  grad_samples = 1, elbo_samples = 100, tol_rel_obj = 0.01,
-  output_samples = 2000, burnin = NULL, thin = 1, CIsize = 0.95,
-  nchain = 1, seeds = 12345, inverse_distr = FALSE, offset = 1e-20,
-  mc_core = TRUE)
+cbq(
+  formula,
+  data,
+  q = NULL,
+  vi = FALSE,
+  nsim = 1000,
+  grad_samples = 1,
+  elbo_samples = 100,
+  tol_rel_obj = 0.01,
+  output_samples = 2000,
+  burnin = NULL,
+  thin = 1,
+  CIsize = 0.95,
+  nchain = 1,
+  seeds = 12345,
+  inverse_distr = FALSE,
+  offset = 1e-20,
+  mc_core = TRUE
+)
 }
 \arguments{
 \item{formula}{An object of class "Formula" (or one that can be coerced to that class): a symbolic description of the model to be fitted.}
@@ -94,7 +108,7 @@ y <- ifelse(x > 0, 1, 0)
 dat <- as.data.frame(cbind(y, x))
 
 # Estimate the CBQ model
-model <- cbq(y ~ x, dat, 0.5)
+model <- cbq(y ~ x, dat, 0.5, nchain = 1, mc_core = FALSE)
 
 # Show the results
 print(model)

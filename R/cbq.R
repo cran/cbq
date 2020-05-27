@@ -542,6 +542,7 @@ cbq <- function(formula,
 
   summaryout <- rstan::summary(stanout)$summary
   sampledf <- as.data.frame(stanout)[, 1:n_covariate]
+  names(sampledf) <- colnames(x)
 
   out = list()
   class(out) <- c("cbq", class(out))
