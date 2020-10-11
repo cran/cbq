@@ -8,7 +8,7 @@
 Bayesian estimation of conditional binary quantile models.
 }
 \references{
-Lu, Xiao (forthcoming). Discrete Choice Data with Unobserved Heterogeneity: A Conditional Binary Quantile Model. Political Analysis. https://doi.org/10.1017/pan.2019.29
+Lu, Xiao. (2020). Discrete Choice Data with Unobserved Heterogeneity: A Conditional Binary Quantile Model. Political Analysis, 28(2), 147-167. https://doi.org/10.1017/pan.2019.29
 
 Stan Development Team (2019). RStan: the R interface to Stan. R package version 2.19.2. https://mc-stan.org
 }

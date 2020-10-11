@@ -1,7 +1,8 @@
 # cbq: An R Package for Conditional Binary Quantile Models
 
 
-The package `cbq` provides basic functionalities of conditional binary quantile models using Markov chain Monte Carlo methods. The estimation is conducted through pre-compiled stan codes.
+The package `cbq` provides basic functionalities of conditional binary quantile models using Markov chain Monte Carlo methods. The estimation is conducted through pre-compiled stan codes. The conditional binary quantile (CBQ) models extend the simple version of binary quantile models for analyzing discrete choices (including but beyond binary choices) with varying choice alternatives. Each quantile estimation represents a local inspection of effects at the specified quantile of the choice probabilities. In the simple binary setting, the features of the choice alternatives within each choice set are assumed to be the same. However, in reality we oftentimes observe individuals who are facing different sets and numbers of choice alterantives. The CBQ models are developed to solve this problem by introducing a conditional multinomial structure for modeling varying choice alternatives. Even though the CBQ models are called "binary", they actually belong to a more general family of dicrete choice models. I refer the readers to [Lu (2020)](https://doi.org/10.1017/pan.2019.29)
+for the details of the estimation.
 
 
 ## Installation
@@ -43,4 +44,4 @@ plot(model)
 
 ## References
 
-Lu, X. (forthcoming) Discrete Choice Data with Unobserved Heterogeneity: A Conditional Binary Quantile Model. Political Analysis.
+Lu, Xiao. (2020). Discrete Choice Data with Unobserved Heterogeneity: A Conditional Binary Quantile Model. Political Analysis, 28(2), 147-167.
