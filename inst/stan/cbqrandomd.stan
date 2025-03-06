@@ -10,7 +10,7 @@ if (mu <0){
 return(prob);
 }
 
-//## function to return the number of observations in a group
+// function to return the number of observations in a group
   int group_size(int[] ref, int value) {
     int count;
     count = 0;
@@ -20,7 +20,7 @@ return(prob);
       return count;
   }
   
-  //## function to subset an integer array (return just those observations in a given group)
+  // function to subset an integer array (return just those observations in a given group)
   int[] subset_intarray(int[] y, int[] ref, int value) {
     int jj;
     int res[group_size(ref, value)];
@@ -43,12 +43,12 @@ return(prob);
 /////////////////////////////////////////////////////////////////////////////////////
 
 data {
-	int N; //# number of observations
-	int D_common; //# number of common covariates
-	vector<lower=-1,upper=1>[N] Y; //# data of choices y = 0 -> -1, y = 1 -> 1
-	matrix[N,D_common] X_common; //# common covariates
-	int N_indx; //# number of groups
-	int ind[N]; //# group index
+	int N; // number of observations
+	int D_common; // number of common covariates
+	vector<lower=-1,upper=1>[N] Y; // data of choices y = 0 -> -1, y = 1 -> 1
+	matrix[N,D_common] X_common; // common covariates
+	int N_indx; // number of groups
+	int ind[N]; // group index
   int N_person; // number of individuals
   int person[N]; // person index
   // int N_wave; // number of waves
@@ -58,7 +58,7 @@ data {
 }
 
 transformed data{
-  int n_group[N_indx]; //# number of observations in the group
+  int n_group[N_indx]; // number of observations in the group
   for (ii in 1:N_indx) {
     n_group[ii] = group_size(ind, ii);
   }
